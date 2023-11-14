@@ -13,14 +13,20 @@ const __dirname = dirname(__filename);
 const app = express()
 const port = 5000;
 
-app.listen(port, () => {
-    console.log('server is listening on port 5000')
-});
+app.listen(port, () => {});
 
-app.use(express.static(path.join(__dirname, '/front-end')));
+app.use(express.static(path.join(__dirname, '/')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/front-end/index.html'));
+    res.sendFile(path.join(__dirname, '/front-end/pages/carros/index.html'));
+})
+
+app.get('/marcas', (req, res) => {
+    res.sendFile(path.join(__dirname, '/front-end/pages/marcas/marcas.html'));
+})
+
+app.get('/modelos', (req, res) => {
+    res.sendFile(path.join(__dirname, '/front-end/pages/modelos/modelos.html'));
 })
 
 app.use(

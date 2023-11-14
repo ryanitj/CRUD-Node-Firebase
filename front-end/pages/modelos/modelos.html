@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="front-end/global.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div class="sidebar">
+
+      <img style="aspect-ratio: 1 / 1; width: 150px;"
+        src="https://upload.wikimedia.org/wikipedia/commons/d/df/Logo_Univali.png" alt="">
+
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Carros</a>
+          </li>
+          <li>
+            <a href="/marcas">Marcas</a>
+          </li>
+          <li>
+            <a href="/modelos">Modelos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      <h2>Modelos</h2>
+
+      <button>
+        adicionar modelo
+      </button>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Ano</th>
+            <th>Id Modelo</th>
+            <th>Nome</th>
+            <th>Placa</th>
+            <th>Renavam</th>
+            <th>Valor</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody id="modelos_tabela-js"></tbody>
+      </table>
+    </div>
+    <!-- <h2>Carro listagem</h2> -->
+  </main>
+
+  <script src="front-end/scripts/modelos.js" type="module"></script>
+</body>
+
+</html>
